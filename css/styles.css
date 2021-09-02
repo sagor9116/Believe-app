@@ -1,0 +1,403 @@
+/* Global Styles */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--body-font);
+  font-size: 16px;
+  color: var(--bodyTextColor);
+  scroll-behavior: smooth;
+}
+
+:root {
+   
+  /* font family */
+  --body-font: 'Prompt', sans-serif;
+  --primary-font:'Montserrat', sans-serif;
+  
+  /* colors */
+  --section-bgColor:#f0f5f9;
+  --bodyTextColor: #070807;
+  --primary-color: #8a0000;
+  --secondary-color: #971b05f8;
+  --navListColor: #6a6a6a;
+  --primaryButtonColor: #8a0000;
+  --SecondaryButtonColor: #043455;
+  --white: #fff;
+  --black:#000;
+  --light-grey: #757577;
+
+  /* font size */
+  --extra-large: 3rem;
+  --large: 2.5rem;
+  --medium: 1.875rem;
+  --medium-second: 1.5rem;
+  --medium-third: 1.25rem;
+  --medium-fourth: 1.125rem;
+  --regular: 1rem;
+  --small: 0.875rem;
+  --icon--large: 2rem;
+  --icon-medium: 1.5rem;
+  --icon-small: 1rem;
+  --icon-extraSmall: 0.875rem;
+}
+
+h1,h2,h3,h4 {
+  font-family: var(--primary-font);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  font-size: var(--regular);
+}
+
+section {
+  
+}
+
+img {
+  width: 100%;
+}
+
+.subtitle {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+.title {
+  font-family: var(--primary-font);
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: var(--medium-third);
+  text-transform: uppercase;
+}
+
+
+/* BUTTONS */
+
+.btn {
+ border: 1px solid transparent;
+ padding: 0.8rem 1.5rem;
+ letter-spacing: 1px;
+ border-radius: 5px;
+ white-space: nowrap;
+ box-sizing: border-box;
+ transition: all 0.3s ease-in;
+ background: var(--primaryButtonColor);
+ font-weight: 600;
+ text-align: center;
+ cursor: pointer;
+}
+
+
+/*===========================
+           HEADER
+============================
+*/
+
+header {
+  padding: 1rem 1.5rem;
+}
+
+.navbar .logo .main-logo {
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+}
+
+.navbar .navbar__list {
+  width: 100%;
+  display: none;
+  text-align: center;
+}
+
+.navbar .navbar__list .navbar__item {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.navbar .navbar__list .navbar__item a {
+  color: var(--navListColor);
+  font-size: var(--regular);
+  letter-spacing: 1px;
+}
+
+.navbar .navbar__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem 1.5rem;
+  vertical-align: middle;
+  margin-top: 6px;
+}
+
+    /* This "active" class will be activated with javascript */
+.navbar__list.active {
+      display: block;
+      z-index: 100;
+}
+
+
+ /*=============================
+        SECTION HOME
+================================
+*/
+
+.home {
+  padding: 1rem;
+}
+
+.home__inner {
+  text-align: center;
+}
+
+.home__inner .home__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.home__inner .home__image img {
+  max-width: 90%;
+}
+
+.home__inner .home__content {
+  width: 100%;
+}
+
+.home__content .home__button {
+  display: inline-block;
+  width: 100%;
+  margin: 0.625rem 0;
+}
+
+.home__content .home__button button {
+  margin: 5px 0;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.home__content .conditional-text {
+  font-size: var(--small);
+  color: var(--light-grey);
+}
+
+/*=============================
+        SECTION ABOUT
+================================
+*/
+
+.about {
+  padding: 1rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.about__wrapper .title {
+  margin-bottom: 1rem;
+}
+
+.about__inner .about__content .about__icon {
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.about__inner .about__content .about__icon .i-circle {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  line-height: 56px;
+  text-align: center;
+  padding: .825rem;
+  vertical-align: middle;
+  color: var(--primary-color);
+}
+
+.about__content .about__desc h3 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.about__content .about__desc p {
+  text-align: justify;
+  line-height: 1.4;
+  font-size: var(--small);
+}
+
+
+
+/*=============================
+        SECTION FEATURES
+================================
+*/
+
+
+.features {
+ padding: 1rem;
+ text-align: center;
+ margin-bottom: 2rem;
+}
+
+.features__wrapper .title{
+ margin-bottom: 2rem;
+ text-align: center;
+}
+
+.features__inner .features__component .features__image {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.features__inner .features__component .features__image img {
+  max-width: 80%;
+  height: auto;
+  text-align: center;
+}
+
+.features__content .features__desc {
+  margin-bottom: 1rem;
+}
+
+.features__content .features__desc h4 {
+  font-size: var(--small);
+  text-transform: capitalize;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.features__content .features__desc h3 {
+  font-weight: 800;
+  font-size: var(--medium-fourth);
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.features__content .features__desc p {
+  text-align: justify;
+  font-size: var(--small);
+  line-height: 1.4;
+}
+
+.features__content .features__list {
+  font-size: var(--small);
+}
+
+.features__content .features__list ul li{
+  display: inline-block;
+  margin: 5px;
+  text-align: center;
+  
+}
+
+.features__content .features__list .small-icon {
+  vertical-align: middle;
+  color: var(--secondary-color);
+}
+
+.features__inverted .features__image {
+  margin-top: 2rem;
+}
+
+
+/*=============================
+        SECTION FEATURES
+================================
+*/
+
+.intro {
+  padding: 1rem;
+}
+
+.intro__wrapper h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.intro__wrapper p {
+  text-align: justify;
+  font-size: var(--small);
+  margin-bottom: 1rem;
+}
+
+.intro__inner .intro__image {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.intro__inner .intro__image img {
+  max-width: 100%;
+}
+
+.intro__inner .intro__content {
+  text-align: center;
+}
+
+.intro__inner .intro__content h3 {
+  text-transform: capitalize;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.intro__inner .intro__content button {
+  color: var(--white);
+}
+
+
+
+
+
+
+/*==========================================
+          MEDIA QUERIES
+============================================
+*/
+
+/*  Small devices (landscape phones, 576px and up) */
+ @media all and (min-width:36em) {
+
+ }
+/* Medium devices (tablets, 768px and up) */
+@media all and (min-width:48em) {
+
+
+
+}
+
+ /* Large devices (desktops, 992px and up) */
+ @media all and (min-width:62em) {
+   .container {
+
+   }
+ }
+
+ /* Large devices (desktops, 992px and up) */
+ @media all and (min-width: 992px) {
+
+
+ }
+
+

@@ -17,44 +17,28 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    
-   <!-- Header starts -->
-   <header id="header">
-       <div class="container">
-           <nav class="navbar">
+   <header>
+       <nav class="navbar">
+           <div class="navbar__content">
                <div class="logo">
-                    <img src="/images/logo.png" alt="fenix" class="main-logo">
+                   <a href="#">Believe</a>
                </div>
-               <ul class="navbar__list" id="navigation">
-                   <li class="navbar__item">
-                       <a href="#">Product</a>
-                    </li>
-                   <li class="navbar__item">
-                       <a href="#">Feature</a>
-                    </li>
-                   <li class="navbar__item">
-                       <a href="#">Reviews</a>
-                    </li>
-                   <li class="navbar__item">
-                       <a href="#">Pricing</a>
-                    </li>
-                   <li class="navbar__item">
-                       <a href="#">FAQ</a>
-                    </li>
-                   <li class="navbar__item">
-                       <button class="btn btn-action nav__button"><a href="#">Download</a></button>
-                   </li>
+               <ul class="navbar__list">
+                   <div class="icon cancel-btn">
+                       <i class="fas fa-times"></i>
+                   </div>
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Pricing</a></li>
+                   <li><a href="#">FAQ</a></li>
+                   <li><a href="#">Contact</a></li>
                </ul>
-               <div class="navbar__toggle">
-                   <i class="fas fa-bars bars"></i>
+               <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
                </div>
-               <!-- navbar__toggle -->
-           </nav>
-           <!-- navbar -->
-       </div>
-       <!-- container -->
+           </div>
+       </nav>
    </header>
-   <!-- header -->
 
    <section id="home">
        <div class="home">
@@ -88,7 +72,7 @@
            <div class="container">
                <div class="about__wrapper">
                   <h5 class="subtitle">what's inside</h5>
-                  <h2 class="title">Built Exclusively For You</h2>
+                  <h1 class="title">Built Exclusively For You</h1>
                   <div class="about__inner">
                       <div class="about__content">
                           <div class="about__icon">
@@ -144,7 +128,7 @@
            <div class="container">
                <div class="features__wrapper">
                    <h5 class="subtitle">what features</h5>
-                   <h2 class="title">Services that Believe provides</h2>
+                   <h1 class="title">Services that Believe provides</h1>
                    <div class="features__inner">
                        <div class="features__component">
                            <div class="features__image">
@@ -236,11 +220,11 @@
        <div class="intro">
            <div class="container">
                <div class="intro__wrapper">
-                   <h2>Workflow for product teams</h2>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore architecto assumenda.</p>
+                   <h1 class="title">Workflow for product teams</h1>
+                   <p class="intro__leadText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore architecto assumenda.</p>
                    <div class="intro__inner">
                        <div class="intro__image">
-                           <img src="/images/intro.png" alt="">
+                           <img src="/images/intro2.png" alt="">
                        </div>
                        <!-- intro__image -->
                        <div class="intro__content">
@@ -259,6 +243,150 @@
        <!-- .intro -->
    </section>
    <!-- #intro -->
+
+
+
+ <section id="pricing">
+     <div class="pricing">
+         <div class="container">
+             <div class="pricing__wrapper">
+                 <h1 class="title">Simple & Affordable Pricing</h1>
+                 <p class="pricing__leadText">Our plans are designed to meet the requirements of both beginners
+                    and players. <br> Get the right plan that suits you.
+                </p>
+                <div class="pricing__inner">
+                    <div class="pricing__card">
+                        <h3 class="pricing__card-header">Personal</h3>
+                        <div class="price"><sup>$</sup>15<span>/MO</span></div>
+                        <ul>
+                            <li><strong>3</strong> Websites</li>
+                            <li><strong>20 GB</strong> SSD</li>
+                            <li><strong>1</strong> Domain Name</li>
+                            <li><strong>5</strong> Email</li>
+                            <li><strong>1x</strong> CPU & RAM</li>
+                        </ul>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                    <!-- pricing__card -->
+                    
+                    <div class="pricing__card">
+                        <h3 class="pricing__card-header">Professional</h3>
+                        <div class="price"><sup>$</sup>30<span>/MO</span></div>
+                        <ul>
+                            <li><strong>10</strong> Websites</li>
+                            <li><strong>50 GB</strong> SSD</li>
+                            <li><strong>1</strong> Domain Name</li>
+                            <li><strong>20</strong> Email</li>
+                            <li><strong>1.5x</strong> CPU & RAM</li>
+                        </ul>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                    <!-- pricing__card -->
+                    
+                    <div class="pricing__card">
+                        <h3 class="pricing__card-header">Premium</h3>
+                        <div class="price"><sup>$</sup>50<span>/MO</span></div>
+                        <ul>
+                            <li><strong>30</strong> Websites</li>
+                            <li><strong>150 GB</strong> SSD</li>
+                            <li><strong>1</strong> Domain Name</li>
+                            <li><strong>40</strong> Email</li>
+                            <li><strong>2x</strong> CPU & RAM</li>
+                        </ul>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                    <!-- pricing__card -->
+
+                    <div class="pricing__card">
+                        <h3 class="pricing__card-header">Ultimate</h3>
+                        <div class="price"><sup>$</sup>80<span>/MO</span></div>
+                        <ul>
+                            <li><strong>100</strong> Websites</li>
+                            <li><strong>500 GB</strong> SSD</li>
+                            <li><strong>1</strong> Domain Name</li>
+                            <li><strong>100</strong> Email</li>
+                            <li><strong>4x</strong> CPU & RAM</li>
+                        </ul>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                    <!-- pricing__card -->
+                </div>
+                <!-- pricing__inner -->
+             </div>
+             <!-- pricing__wrapper -->
+         </div>
+         <!-- container -->
+     </div>
+     <!-- .pricing -->
+ </section>
+ <!-- #pricing -->
+
+
+  <footer id="footer">
+     <div class="footer">
+         <div class="container">
+             <div class="footer__wrapper">
+                 <div class="footer__inner">
+                    <div class="footer__logo">
+                      <a href="#">Believe</a>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure velit reprehenderit non error beatae, cumque explicabo magni saepe, dignissimos minima ullam neque adipisci. Cumque, accusamus fugit iusto repudiandae molestiae culpa?</p>
+                    </div>
+                    <!-- footer__logo -->
+                    
+                    <div class="footer__items footer__products">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="">Web Studio</a></li>
+                            <li><a href="">DynamicBox Flex</a></li>
+                            <li><a href="">Programming Forms</a></li>
+                        </ul>
+                    </div>
+                    <!-- footer__products -->
+                    <div class="footer__items footer__resources">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="">Nostrud Exercitation</a></li>
+                            <li><a href="">Visual mockups</a></li>
+                            <li><a href="">Nostrud Exercitation</a></li>
+                            <li><a href="">Visual mockups</a></li>
+                            <li><a href="">Nostrud Exercitation</a></li>
+                        </ul>
+                    </div>
+                    <!-- footer__resources -->
+                    <div class="footer__items footer__company">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="">Computers crackled</a></li>
+                            <li><a href="">Critics grumbled</a></li>
+                            <li><a href="">Natives compared</a></li>
+                            <li><a href="">Singles wished</a></li>
+                            <li><a href="">Drifts formed</a></li>
+                        </ul>
+                    </div>
+                    <!-- footer__company -->
+                 </div>
+                 <!-- footer__inner -->
+                 <div class="footer__bottom">
+                     <div class="footer__socialLinks">
+                         <ul>
+                             <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                             <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                             <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                             <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                         </ul>
+                     </div>
+                     <div class="footer__copyright">
+                         <p> &copy;2021 PHEONIX open project. All rights reserved</p>
+                     </div>
+                 </div>
+             </div>
+             <!-- footer__wrapper -->
+         </div>
+         <!-- container -->
+     </div>
+     <!-- .footer -->
+ </footer>
+ <!-- footer -->
 
 
 
